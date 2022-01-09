@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/Pink" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/btn_back"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="12dp"
+                    android:src="@drawable/ic_back"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="EDIT ACCOUNT"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:paddingRight="50dp"/>
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="2dp"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="25dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="20dp">
+
+                    <!-- Email -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:text="Email"
+                        android:layout_marginTop="15dp"/>
+
+                    <EditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:fontFamily="sans-serif"
+                        android:textSize="16sp"
+                        android:inputType="textEmailAddress"
+                        android:drawablePadding="7dp"
+                        android:textColor="@color/black"
+                        android:paddingLeft="15dp"
+                        android:hint="Email"
+                        android:layout_marginTop="10dp"/>
+
+                    <!-- Nama Lengkap -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:text="Nama Lengkap"
+                        android:layout_marginTop="25dp"/>
+
+                    <EditText
+                        android:id="@+id/etNama"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:fontFamily="sans-serif"
+                        android:textSize="16sp"
+                        android:inputType="text"
+                        android:drawablePadding="7dp"
+                        android:textColor="@color/black"
+                        android:paddingLeft="15dp"
+                        android:hint="Nama Lengkap"
+                        android:layout_marginTop="10dp"/>
+
+                    <!-- Nomor Telepon -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:text="Nomor Telepon"
+                        android:layout_marginTop="15dp"/>
+
+                    <EditText
+                        android:id="@+id/etNoTelp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:fontFamily="sans-serif"
+                        android:textSize="16sp"
+                        android:inputType="number"
+                        android:drawablePadding="7dp"
+                        android:textColor="@color/black"
+                        android:paddingLeft="15dp"
+                        android:hint="Nomor Telepon"
+                        android:layout_marginTop="10dp"/>
+
+                    <!-- Alamat -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Alamat"
+                        android:fontFamily="sans-serif"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="15dp"/>
+
+                    <EditText
+                        android:id="@+id/etAlamat"
+                        android:layout_width="match_parent"
+                        android:fontFamily="sans-serif"
+                        android:textSize="16sp"
+                        android:inputType="text"
+                        android:layout_height="50dp"
+                        android:drawablePadding="7dp"
+                        android:textColor="@color/black"
+                        android:paddingLeft="15dp"
+                        android:hint="Alamat Lengkap"
+                        android:layout_marginTop="10dp"/>
+
+                    <!-- Kata Sandi -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Kata Sandi"
+                        android:fontFamily="sans-serif"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="15dp"/>
+
+                    <EditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:fontFamily="sans-serif"
+                        android:textSize="16sp"
+                        android:inputType="textPassword"
+                        android:layout_height="50dp"
+                        android:drawablePadding="7dp"
+                        android:textColor="@color/black"
+                        android:paddingLeft="15dp"
+                        android:hint="Kata Sandi"
+                        android:layout_marginTop="10dp"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnUpdate"
+                        android:layout_width="189dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded_button"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="UPDATE"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
